@@ -1,0 +1,52 @@
+<!doctype html>
+<!--
+    Name: Victor (Alex) Zapata 
+    Date created: 03/31/2025
+    Date last edited: 04/13/2025
+    Version: 1.0
+    Description: Homework 3 HTML thank you form 
+-->
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style-hw3.css"> 
+        <title>Thank you! | Patient Registration Form</title>
+    </head>
+
+    <body>
+        <header>
+            <table width="100%">
+                <tr>
+                    <td valign="top" align="left" width="20%">
+                    <div class="image">
+                        <img src="./stethoscopeandheart.png" alt="clinic logo" class="logo" 
+                        height="120"
+                        Width="130">
+                    </div>
+                    </td>
+                    <td>
+                        <h1>Harris County Clinic</h1>
+                    </td>
+                    <td valign="bottom" align="right" width="20%">
+                    <p>Today's Date: <span id="today"></span></p>
+                    </td>
+                </tr>
+            </table>
+        </header>
+
+        <main>
+            <h1>Thank you for creating your account with us!</h1>
+        </main>
+
+        <footer>
+            <p>Harris County Clinic | <a href="contact-us-hw3.html">Contact Us</a></p>
+        </footer> 
+    </body>
+
+    <script>
+        const d= new Date();
+        let text= d.toLocaleDateString();
+        document.getElementById("today").innerHTML= text;
+    </script>
+
+</html> 
