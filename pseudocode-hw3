@@ -1,0 +1,155 @@
+FUNCTION validateFirstname():
+    IF firstname is empty OR doesn't match pattern OR too short OR too long THEN
+        Display appropriate error message
+        RETURN false
+    ELSE
+        Clear error message
+        RETURN true
+    END IF
+END FUNCTION
+
+FUNCTION validateMiddleinitial():
+    Convert to uppercase
+    IF not a single uppercase letter THEN
+        Display error message
+        RETURN false
+    ELSE
+        Clear error message
+        RETURN true
+    END IF
+END FUNCTION
+
+FUNCTION validateLastname():
+    IF lastname is empty OR doesn't match pattern OR too short OR too long THEN
+        Display appropriate error message
+        RETURN false
+    ELSE
+        Clear error message
+        RETURN true
+    END IF
+END FUNCTION
+
+FUNCTION validateDateofbirth():
+    IF date is in future OR more than 120 years ago THEN
+        Display appropriate error message
+        Clear field
+        RETURN false
+    ELSE
+        Clear error message
+        RETURN true
+    END IF
+END FUNCTION
+
+FUNCTION validateSsn():
+    IF SSN doesn't match proper format THEN
+        Display error message
+        RETURN false
+    ELSE
+        Clear error message
+        RETURN true
+    END IF
+END FUNCTION
+
+FUNCTION validateAddressline():
+    IF address too short THEN
+        Display error message
+        RETURN false
+    ELSE
+        Clear error message
+        RETURN true
+    END IF
+END FUNCTION
+
+FUNCTION validateCity():
+    IF city is empty THEN
+        Display error message
+        RETURN false
+    ELSE
+        Clear error message
+        RETURN true
+    END IF
+END FUNCTION
+
+FUNCTION validateZipcode():
+    Remove non-digits
+    IF empty THEN
+        Display error message
+        RETURN false
+    END IF
+    
+    Ensure 5 digits max
+    RETURN true
+END FUNCTION
+
+FUNCTION validatePhonenumber():
+    Remove non-digits
+    IF not 10 digits THEN
+        Display error message
+        RETURN false
+    END IF
+    
+    Format as XXX-XXX-XXXX
+    RETURN true
+END FUNCTION
+
+FUNCTION validateEmailaddress():
+    IF empty OR invalid format THEN
+        Display appropriate error message
+        RETURN false
+    ELSE
+        Clear error message
+        RETURN true
+    END IF
+END FUNCTION
+
+FUNCTION validateUserid():
+    Convert to lowercase
+    IF empty OR starts with number OR contains invalid chars OR too short OR too long THEN
+        Display appropriate error message
+        RETURN false
+    ELSE
+        Clear error message
+        RETURN true
+    END IF
+END FUNCTION
+
+FUNCTION validatePassword():
+    Check for lowercase, uppercase, number, special char, and user ID
+    Display errors for any missing requirements
+END FUNCTION
+
+FUNCTION confirmPassword():
+    IF passwords don't match THEN
+        Display error
+        RETURN false
+    ELSE
+        Show confirmation
+        RETURN true
+    END IF
+END FUNCTION
+
+FUNCTION reviewInput():
+    Create table header
+    FOR each form field with value:
+        Add field name and value to table
+    END FOR
+    Display table
+END FUNCTION
+
+FUNCTION removeReview():
+    Clear review display
+END FUNCTION
+
+FUNCTION showAlert():
+    Display alert box
+    Setup close button handler
+END FUNCTION
+
+FUNCTION validateEverything():
+    Call all validation functions
+    IF all pass THEN
+        Enable submit button
+    ELSE
+        Show alert
+    END IF
+END FUNCTION
