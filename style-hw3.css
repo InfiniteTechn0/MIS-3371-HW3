@@ -1,0 +1,212 @@
+/*
+Name: Victor (Alex) Zapata
+Date created: 03/31/2025
+Date last edited: 04/13/2025
+Version: 1.0
+Description: Homework 3 CSS 
+*/ 
+/* MISSO was used as a reference for this assignment */
+
+header {
+    width: 100%;
+    background-color: blue;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: lightblue;
+    margin: 0;
+    height: 100%;
+    min-height: 100vh; 
+}
+
+form {
+    flex-grow: 1;
+}
+
+h1, h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+h1 {
+  color: white;
+}
+
+main {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    flex-grow: 1;
+}
+
+.image {
+    text-align: left;
+}
+
+.td1 {
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+th {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+    position: flex ;
+    bottom: 0;
+    width: 100%;
+    background-color: grey;
+    height: 2.0rem;
+}
+
+#footer {
+    text-align: right;
+    font-family: "optima", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+label {
+    text-align: right;
+    font-family: "optima", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+input {
+    text-align: left;
+    font-family: "optima", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+textarea {
+    text-align: left;
+    font-family: "optima", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+#today {
+    text-align: left;
+    font-family: "optima", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    margin-right: 5px;
+}
+
+p {
+    text-align: right;
+    font-family: "optima", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+p {
+    color: white;
+}
+
+.error {
+    color: red;
+    font-size: 12;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+.pword-message {
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    position: relative;
+    left: 100px;
+    background: transparent;
+    padding: 10px;
+    border-spacing: 2px;
+    border-radius: 20px;
+    color: red;
+}
+
+#review {
+    margin-top: 5px;
+}
+
+table.output,
+tr.output,
+td.output {
+    width: 500px;
+    background-color: blue;
+    padding: 10px;
+    border-spacing: 2px;
+    border-radius: 20px;
+    color: white;
+}
+
+td.output {
+    width: 500px;
+    background-color: blue;
+    padding: 10px;
+    border-spacing: 2px;
+}
+
+td.outputdata
+{
+    width: auto;
+    background-color: lightblue;
+    padding: 10px;
+    border-spacing: 4px;
+    text-align: left;
+}
+
+#alert-box {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: white;
+}
+
+#alert-content
+{
+    border-radius: 10px;
+    width: 300px;
+    height: 135px;
+    margin: auto;
+    margin-top: 20%;
+    padding: 30px;
+    text-align: center;
+    background-color: blue;
+}
+
+#alert-conent h4
+{
+    font-size: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+#close-alert
+{
+    background-color: white;
+    border-width: 1px;
+    border-style: solid;
+    color: black;
+    border-color: black;
+    font-size: 10px;
+    font-weight: bold;
+    height: 20px;
+    width: 80px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
